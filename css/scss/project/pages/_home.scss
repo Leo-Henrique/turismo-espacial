@@ -1,0 +1,93 @@
+body {
+    background-image: url("../images/home/background-home-desktop.jpg");
+}
+
+.intro {
+    padding: 4rem 0;
+    height: 100%;
+}
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 6rem;
+}
+.intro-texts .h5 {
+    color: $secondary;
+}
+.intro-texts .h1 {
+    color: $support;
+    margin: 2.4rem 0;
+}
+.intro-texts p {
+    color: $secondary;
+    max-width: 550px;
+}
+.intro-cta a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    background-color: $support;
+    color: $primary;
+    @include btn-transition(box-shadow);
+
+    @include desktop-supported {
+        &:hover {
+            box-shadow: 0 0 0 70px rgba(255, 255, 255, 0.15);
+        }
+    }
+}
+
+
+@include breakpoint-lg {
+    body {
+        background-image: url("../images/home/background-home-tablet.jpg");
+    }
+    .intro {
+        padding: 8rem 0;
+    }
+    .intro-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10rem;
+    }
+    .intro-texts {
+        text-align: center;
+    }
+    .intro-cta a {
+        width: 240px;
+        height: 240px;
+        @include desktop-supported {
+            &:hover {
+                box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.15);
+            }
+        }
+    }
+}
+@include breakpoint-sm {
+    body {
+        background-image: url("../images/home/background-home-mobile.jpg");
+    }
+    .intro {
+        padding: 4rem 0;
+    }
+    .intro-container {
+        gap: 8rem;
+    }
+    .intro-texts .h1 {
+        margin: 1.6rem 0;
+    }
+    .intro-cta a {
+        width: 150px;
+        height: 150px;
+        @include font-size(2rem);
+        @include desktop-supported {
+            &:hover {
+                box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.15);
+            }
+        }
+    }
+}

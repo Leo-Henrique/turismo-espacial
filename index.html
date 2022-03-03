@@ -5,10 +5,29 @@
     <meta charset="UTF-8" />
 
     <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
     <!-- FIM -->
+
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- FIM -->
+
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#0b0d17">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Turismo Espacial">
+    <meta name="application-name" content="Turismo Espacial">
+    <meta name="msapplication-TileColor" content="#0b0d17">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <!-- FIM -->
 
 
@@ -27,9 +46,103 @@
         <meta property="og:title" content="Turismo Espacial | Leonardo Henrique" />
         <meta property="og:description" content="" />
         <meta property="og:url" content="https://leo-henrique.github.io/turismo-espacial/" />
-        <meta property="og:" content="" />
-        <meta property="og:" content="" />
+        <meta property="og:image" content="https://leo-henrique.github.io/turismo-espacial/images/favicon/og-image.png" />
+        <meta property="og:image:alt" content="Favicon do site" />
         <!-- FIM -->
     <!-- FIM -->
+
+    <title>Turismo Espacial | Leonardo Henrique</title>
 </head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+           <div class="header-logo">
+                <a href="/" 
+                aria-label="Logotipo">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="24" fill="#fff"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0s0 24-24 24c23.578.171 24 24 24 24s0-24 24-24C24 24 24 0 24 0Z" fill="#0B0D17"/>
+                    </svg>
+                </a>
+           </div>
+
+           <button class="header-btn-mobile"
+           id="headerBtnMobile"
+           type="button"
+           aria-expanded="false"
+           aria-label="Abrir menu de navegação"
+           aria-controls="headerMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+                    <path d="M0 0h24v3H0zm0 9h24v3H0zm0 9h24v3H0z" fill="#D0D6F9" fill-rule="evenodd"/>
+                </svg>
+           </button>
+    
+            <nav class="header-menu"
+            id="headerMenu">
+                <ol>
+                    <li class="menu-item active">
+                        <a href="/">
+                            <span>01</span>
+                            <span>Home</span>
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="destino.html">
+                            <span>02</span>
+                            <span>Destino</span>
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="equipe.html">
+                            <span>03</span>
+                            <span>Equipe</span>
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="tecnologia.html">
+                            <span>04</span>
+                            <span>Tecnologia</span>
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+            <div class="header-menu-bg"></div>
+        </div>
+    </header>
+
+
+    <!-- INTRODUÇÃO -->
+    <main class="intro">
+        <div class="container intro-container">
+            <div class="intro-texts">
+                <span class="h5">
+                    Então, você quer viajar
+                </span>
+
+                <h1 class="h1">
+                    Espaço
+                </h1>
+
+                <p>
+                    Vamos encarar; se você quer ir para o espaço, você pode ir genuinamente para o espaço sideral e não pairar meio que à beira dele. Bem, sente-se e relaxe porque nós lhe daremos uma experiência verdadeiramente fora deste mundo!
+                </p>
+            </div>
+
+            <div class="intro-cta">
+                <a class="h4"
+                href="destino.html">
+                    Explorar
+                </a>
+            </div>
+        </div>
+    </main>
+    <!-- FIM -->
+
+    <script src="js/script.js"></script>
+
+</body>
 </html>

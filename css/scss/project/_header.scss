@@ -1,0 +1,166 @@
+.header {
+    margin-top: 4rem;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    &::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 44%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+}
+.header-logo {
+    position: absolute;
+    left: 6rem;
+}
+.header-btn-mobile {
+    display: none;
+}
+.header-menu {
+    margin-left: auto;
+}
+.header-menu > ol {
+    display: flex;
+    align-items: center;
+}
+.header-menu .menu-item {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    
+    a, button {
+        display: block;
+        cursor: pointer;
+        padding-top: 3.8rem;
+        padding-bottom: calc(3.8rem - 3px); // height pseudo element
+
+        @include font-size(1.6rem);
+        font-family: "Barlow Condensed";
+        text-transform: uppercase;
+        white-space: nowrap;
+        letter-spacing: 2.7px;
+        color: $secondary;
+        @include btn-transition(color);
+
+        > span:first-child {
+            font-weight: 700;
+            margin-right: 0.4rem;
+        }
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: transparent;
+        @include btn-transition(
+            width,
+            background-color
+        );
+    }
+    @include desktop-supported {
+        &:hover::after {
+            width: 100%;
+            background-color: $secondary;
+        }
+    }
+    &.active,
+    &:active {
+        a, button {
+            cursor: default;
+            color: $support;
+        }
+        &::after {
+            width: 100%;
+            background-color: $support;
+        }
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.header-menu-bg {
+    width: 57%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(81.5485px);
+    backdrop-filter: blur(81.5485px);
+}
+
+
+@media (max-width: 1600px) {
+    .header-container {
+        justify-content: space-between;
+        column-gap: 5rem;
+    }
+    .header-logo {
+        position: initial;
+        order: -1;
+    }
+}
+
+@include breakpoint-xl {
+    .header-container::before {
+        display: none;
+    }
+    .header-menu-bg {
+        width: 65%;
+    }
+}
+
+@include breakpoint-lg {
+    .header {
+        margin-top: 0;
+    }
+    .header-container {
+        max-width: initial;
+        padding-left: 0;
+        padding-right: 0;
+        column-gap: 3rem;
+    }
+    .header-menu-bg {
+        display: none;
+    }
+    .header-logo {
+        padding-left: $gutter;
+    }
+    .header-menu {
+        padding-right: $gutter;
+        background-color: rgba(255, 255, 255, 0.04);
+        -webkit-backdrop-filter: blur(81.5485px);
+        backdrop-filter: blur(81.5485px);
+    }
+    .header-menu .menu-item {
+        margin-left: 1.8rem;
+        margin-right: 1.8rem;
+        a, button {
+            @include font-size(1.4rem);
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        padding: 2rem 0;
+    }
+    .header-logo {
+        padding-left: $gutter;
+    }
+    .header-btn-mobile {
+        cursor: pointer;
+        padding: 2rem;
+        display: block;
+    }
+    .header-menu {
+        display: none;
+        padding-right: 0;
+    }
+}

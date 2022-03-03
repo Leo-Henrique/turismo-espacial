@@ -1,0 +1,31 @@
+// Bibliotecas
+@import 
+"libraries/normalize",
+"libraries/meyer-web-reset",
+"libraries/rfs";
+
+// Variáveis
+@import
+"variables/colors",
+// "variables/spacings",
+"variables/typographic-scale",
+"variables/general";
+
+// Mixins
+@import
+"mixins/responsive",
+// "mixins/btn-states",
+// "mixins/columns",
+"mixins/general";
+
+// Customizações das bibliotecas
+@import 
+"custom/rfs",
+"custom/reset";
+
+// Componentes
+
+// Projeto
+@import "project";
+
+// Animações

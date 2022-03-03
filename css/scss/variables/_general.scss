@@ -1,0 +1,18 @@
+$gutter: 30px;
+
+// z-index list
+$zIndex-fixed-btns: 10;
+$zIndex-dropdown: 20;
+$zIndex-modal: 30;
+
+
+// box-shadows
+$shadow-8dp: 
+0 8px 10px 1px rgba(0,0,0,0.14),
+0 3px 14px 3px rgba(0,0,0,0.12),
+0 4px 5px 0 rgba(0,0,0,0.20);
+
+
+// animations
+$animation-displacementY: 20px;
+$animation-displacementX: $gutter / 2;
