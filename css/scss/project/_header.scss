@@ -44,7 +44,7 @@
         text-transform: uppercase;
         white-space: nowrap;
         letter-spacing: 2.7px;
-        color: $secondary;
+        color: $support;
         @include btn-transition(color);
 
         > span:first-child {
@@ -150,6 +150,7 @@
 @media (max-width: 700px) {
     .header {
         padding: 2rem 0;
+        position: initial;
     }
     .header-logo {
         padding-left: $gutter;
@@ -159,8 +160,64 @@
         padding: 2rem;
         display: block;
     }
+    // JS
+    .header-btn-mobile.close {
+        padding: 3rem 2rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: $zIndex-btn-close;
+    }
     .header-menu {
-        display: none;
+        padding-top: 10rem;
         padding-right: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: $zIndex-menu-mobile;
+        width: 70%;
+        min-height: 100vh;
+        
+        // JS
+        display: none;
+        @include general-transition(transform, opacity);
+        opacity: 0;
+        transform: translate3D(50px, 0, 0);
+        &.display {
+            display: block;
+        }
+        &.show {
+            transform: none;
+            opacity: 1;
+        }
+    }
+    // JS
+    .menu-mobile-scrollbar {
+        overflow: hidden;
+    }
+    .header-menu > ol {
+        display: block;
+    }
+    .header-menu .menu-item {
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        position: relative;
+        
+        a, button {
+            padding: 1.6rem 3.2rem;
+            @include font-size(1.6rem);
+            flex: 1;
+        }
+        &::after {
+            display: none;
+        }
+        &.active {
+            &::after {
+                width: 4px;
+                height: auto;
+            }
+        }
     }
 }
