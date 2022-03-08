@@ -10,13 +10,11 @@ body {
 main:not(.intro) {
     padding: 4rem 0;
 }
-
 @include breakpoint-sm {
     main:not(.intro) {
         padding-top: 3rem;
     }
 }
-
 
 .title-internal {
     margin-bottom: 6.4rem;

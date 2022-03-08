@@ -462,7 +462,7 @@ svg {
 }
 
 .js #tabsContentTexts > div,
-.js #tabsContentImgs > img {
+.js #tabsContentImgs img {
   display: none;
   opacity: 0;
   transform: translate3D(-15px, 0, 0);
@@ -472,14 +472,14 @@ svg {
 }
 
 .js #tabsContentTexts > div.show,
-.js #tabsContentImgs > img.show {
+.js #tabsContentImgs img.show {
   opacity: 1;
   transform: none;
 }
 
 @media (max-width: 991.98px) {
   .js #tabsContentTexts > div,
-  .js #tabsContentImgs > img {
+  .js #tabsContentImgs img {
     transform: none;
   }
 }
@@ -1320,6 +1320,7 @@ main.crew {
   }
   .crew-img img {
     height: 530px;
+    object-fit: contain;
   }
 }
 
@@ -1364,5 +1365,181 @@ main.crew {
     height: 300px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.technology-page {
+  background-image: url("../images/technology/background-technology-desktop.jpg");
+}
+
+@media (max-width: 991.98px) {
+  .technology-page {
+    background-image: url("../images/technology/background-technology-tablet.jpg");
+  }
+}
+
+@media (max-width: 575.98px) {
+  .technology-page {
+    background-image: url("../images/technology/background-technology-mobile.jpg");
+  }
+}
+
+.technology-container {
+  padding: 10rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.technology-content {
+  width: 58.333%;
+  display: flex;
+  column-gap: 4rem;
+  padding-right: 3rem;
+}
+
+.technology-content .technology-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.technology-content .technology-nav button {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+  color: #FFF;
+  transition-property: border-color, background-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+@media not all and (hover: none) {
+  .technology-content .technology-nav button:hover {
+    border-color: #FFF;
+  }
+}
+
+.technology-content .technology-nav li.active button {
+  background-color: #FFF;
+  border-color: #FFF;
+  color: #0B0D17;
+}
+
+.technology-content span {
+  display: block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  color: #D0D6F9;
+  margin-bottom: 1.2rem;
+}
+
+.technology-content .h3 {
+  color: #FFF;
+  margin-bottom: 1.8rem;
+}
+
+.technology-content p {
+  max-width: 500px;
+  color: #D0D6F9;
+}
+
+.technology-img {
+  position: absolute;
+  right: 0;
+}
+
+.technology-img#tabsContentImgs > img {
+  transform: translate3D(15px, 0, 0);
+}
+
+.technology-img#tabsContentImgs > img.show {
+  transform: none;
+}
+
+@media (max-width: 1199.98px) {
+  .technology-img img {
+    height: 420px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .technology .container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .technology-container {
+    padding: 0;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: initial;
+    gap: 6rem;
+  }
+  .technology-content {
+    flex-direction: column;
+    gap: 4rem;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: initial;
+    max-width: 720px;
+    text-align: center;
+  }
+  .technology-content .technology-nav ul {
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .technology-content .technology-nav button {
+    width: 60px;
+    height: 60px;
+  }
+  .technology-content span {
+    margin-bottom: 0.8rem;
+  }
+  .technology-content p {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .technology-img {
+    padding-top: 8rem;
+    position: initial;
+    order: -1;
+  }
+  .technology-img img {
+    width: 100%;
+    object-fit: cover;
+    height: initial;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .technology-content {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .technology-container {
+    gap: 3rem;
+  }
+  .technology-content {
+    max-width: 100%;
+    gap: 2rem;
+  }
+  .technology-img {
+    padding-top: 0;
   }
 }

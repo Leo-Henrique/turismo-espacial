@@ -1,6 +1,6 @@
 export default function tabsNavigation() {
     const btns = document.querySelectorAll("#tabsNav button");
-    const contentImgs = document.querySelectorAll("#tabsContentImgs > img");
+    const contentImgs = document.querySelectorAll("#tabsContentImgs img");
     const contentTexts = document.querySelectorAll("#tabsContentTexts > div");
 
     function showTabContents(index) {

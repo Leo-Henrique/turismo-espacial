@@ -108,6 +108,7 @@ main.crew {
         align-self: center;
         img {
             height: 530px;
+            object-fit: contain;
         }
     }
 }
