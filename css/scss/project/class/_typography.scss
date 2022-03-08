@@ -1,4 +1,4 @@
-.h1, .h2, .h3, .h4, .h6 {
+.h1, .h2, .h3, .h4, .h5-ballefair, .h6 {
     font-family: 'Bellefair', serif;
     font-weight: 400;
     line-height: 1.15;
@@ -24,6 +24,11 @@
     line-height: 1.22;
     text-transform: uppercase;
     letter-spacing: 4.7px;
+}
+.h5-ballefair {
+    @include font-size($h5);
+    line-height: 1.22;
+    letter-spacing: 2px;
 }
 .h6 {
     @include font-size($h5);

@@ -1,0 +1,19 @@
+.js #tabsContentTexts > div,
+.js #tabsContentImgs > img {
+    display: none;
+    opacity: 0;
+    transform: translate3D(-15px, 0, 0);
+    @include general-transition(opacity, transform);
+
+    &.show {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@include breakpoint-lg {
+    .js #tabsContentTexts > div,
+    .js #tabsContentImgs > img {
+        transform: none;
+    }
+}

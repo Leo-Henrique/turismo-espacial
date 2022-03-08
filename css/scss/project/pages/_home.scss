@@ -1,10 +1,23 @@
-body {
+.home-page {
     background-image: url("../images/home/background-home-desktop.jpg");
-}
 
+    @include breakpoint-lg {
+        background-image: url("../images/home/background-home-tablet.jpg");
+    }
+    @include breakpoint-sm {
+        background-image: url("../images/home/background-home-mobile.jpg");
+    }
+}
 .intro {
     padding: 4rem 0;
     height: 100%;
+
+    flex: 1;
+    display: flex;
+    align-items: center;
+    > .container {
+        flex: 1;
+    }
 }
 .intro-container {
     display: flex;
@@ -43,9 +56,6 @@ body {
 
 
 @include breakpoint-lg {
-    body {
-        background-image: url("../images/home/background-home-tablet.jpg");
-    }
     .intro {
         padding: 8rem 0;
     }
@@ -68,9 +78,6 @@ body {
     }
 }
 @include breakpoint-sm {
-    body {
-        background-image: url("../images/home/background-home-mobile.jpg");
-    }
     .intro {
         padding: 4rem 0;
     }

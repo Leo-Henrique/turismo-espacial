@@ -40,7 +40,7 @@
         padding-bottom: calc(3.8rem - 3px); // height pseudo element
 
         @include font-size(1.6rem);
-        font-family: "Barlow Condensed";
+        font-family: "Barlow Condensed", sans-serif;
         text-transform: uppercase;
         white-space: nowrap;
         letter-spacing: 2.7px;
@@ -210,14 +210,17 @@
             @include font-size(1.6rem);
             flex: 1;
         }
-        &::after {
-            display: none;
-        }
         &.active {
             &::after {
                 width: 4px;
                 height: auto;
             }
         }
+    }
+}
+@include breakpoint-sm {
+    .header-logo svg {
+        width: 40px;
+        height: 40px;
     }
 }

@@ -15,7 +15,7 @@
 @import
 "mixins/responsive",
 // "mixins/btn-states",
-// "mixins/columns",
+"mixins/columns",
 "mixins/general";
 
 // Customizações das bibliotecas
@@ -24,6 +24,7 @@
 "custom/reset";
 
 // Componentes
+@import "components/tabs-navigation";
 
 // Projeto
 @import "project";

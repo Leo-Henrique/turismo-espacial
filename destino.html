@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+    <!-- FIM -->
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- FIM -->
+
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#0b0d17">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Turismo Espacial">
+    <meta name="application-name" content="Turismo Espacial">
+    <meta name="msapplication-TileColor" content="#0b0d17">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- FIM -->
+
+
+    <!-- METADADOS -->
+    <link rel="canonical" href="https://leo-henrique.github.io/turismo-espacial/destino.html" />
+    <meta name="author" content="Leonardo Henrique" />
+    <meta name="description" content="Desafio do Frontend Mentor com o objetivo de clonar da forma mais semelhante possível este design de turismo espacial. Solucionado por Leonardo Henrique." />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+        <!-- PROTOCOLO OPEN GRAPH -->
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Turismo Espacial" />
+        <meta property="og:title" content="Destino | Turismo Espacial" />
+        <meta property="og:description" content="Desafio do Frontend Mentor com o objetivo de clonar da forma mais semelhante possível este design de turismo espacial. Solucionado por Leonardo Henrique." />
+        <meta property="og:url" content="https://leo-henrique.github.io/turismo-espacial/destino.html" />
+        <meta property="og:image" content="https://leo-henrique.github.io/turismo-espacial/images/favicon/og-image.png" />
+        <meta property="og:image:alt" content="Favicon do site" />
+        <!-- FIM -->
+    <!-- FIM -->
+
+    <title>Destino | Turismo Espacial</title>
+</head>
+<body class="destination-page">
+
+    <header class="header">
+        <div class="container header-container">
+           <div class="header-logo">
+                <a href="/" 
+                aria-label="Logotipo">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="24" fill="#fff"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0s0 24-24 24c23.578.171 24 24 24 24s0-24 24-24C24 24 24 0 24 0Z" fill="#0B0D17"/>
+                    </svg>
+                </a>
+           </div>
+
+           <button class="header-btn-mobile"
+           id="headerBtnMobile"
+           type="button"
+           aria-expanded="false"
+           aria-label="Abrir menu de navegação"
+           aria-controls="headerMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+                    <path d="M0 0h24v3H0zm0 9h24v3H0zm0 9h24v3H0z" fill="#D0D6F9" fill-rule="evenodd"/>
+                </svg>
+           </button>
+    
+            <nav class="header-menu"
+            id="headerMenu">
+                <ol>
+                    <li class="menu-item">
+                        <a href="/">
+                            <span>00</span>
+                            <span>Home</span>
+                        </a>
+                    </li>
+    
+                    <li class="menu-item active">
+                        <a href="#">
+                            <span>01</span>
+                            <span>Destino</span>
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="equipe.html">
+                            <span>02</span>
+                            <span>Equipe</span>
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="tecnologia.html">
+                            <span>03</span>
+                            <span>Tecnologia</span>
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+            <div class="header-menu-bg"></div>
+        </div>
+    </header>
+
+
+    <main class="destination">
+        <div class="container">
+            <h1 class="h5 title-internal">
+                <span>01</span>
+                <span>Escolha seu destino</span>
+            </h1>
+
+            <div class="destination-container">
+                <div class="destination-img"
+                id="tabsContentImgs">
+                    <img src="images/destination/image-moon.png" 
+                    alt="Lua">
+
+                    <img src="images/destination/image-mars.png" 
+                    alt="Marte">
+                    
+                    <img src="images/destination/image-europa.png" 
+                    alt="Europa">
+
+                    <img src="images/destination/image-titan.png" 
+                    alt="Titã">
+                </div>
+
+                <div class="destination-content">
+                    <nav class="destination-nav"
+                    id="tabsNav">
+                        <ul>
+                            <li>
+                                <button type="button">
+                                    Lua
+                                </button>
+                            </li>
+
+                            <li>
+                                <button type="button">
+                                    Marte
+                                </button>
+                            </li>
+
+                            <li>
+                                <button type="button">
+                                    Europa
+                                </button>
+                            </li>
+
+                            <li>
+                                <button type="button">
+                                    Titã
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div id="tabsContentTexts">
+                        <!-- LUA -->
+                        <div>
+                            <h2 class="h2">
+                                Lua
+                            </h2>
+        
+                            <p>
+                                Veja nosso planeta como você nunca viu antes. Uma viagem relaxante perfeita para ajudar a recuperar a perspectiva e voltar revigorado. Enquanto estiver lá, conheça um pouco da história visitando os locais de pouso da Luna 2 e da Apollo 11.
+                            </p>
+        
+                            <div class="destination-info">
+                                <div>
+                                    <span>
+                                        Distância média
+                                    </span>
+        
+                                    <span class="h5-ballefair">
+                                        384,400 km
+                                    </span>
+                                </div>
+        
+                                <div>
+                                    <span>
+                                        Tempo de viagem estimado
+                                    </span>
+        
+                                    <span class="h5-ballefair">
+                                        3 dias
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MARTE -->
+                        <div>
+                            <h2 class="h2">
+                                Marte
+                            </h2>
+        
+                            <p>
+                                Não se esqueça de levar suas botas de caminhada. Você precisará deles para enfrentar o Monte Olimpo, a montanha planetária mais alta do nosso sistema solar. É duas vezes e meia o tamanho do Everest!
+                            </p>
+        
+                            <div class="destination-info">
+                                <div>
+                                    <span>
+                                        Distância média
+                                    </span>
+        
+                                    <span class="h5-ballefair">
+                                        225 MIL. km
+                                    </span>
+                                </div>
+        
+                                <div>
+                                    <span>
+                                        Tempo de viagem estimado
+                                    </span>
+        
+                                    <span class="h5-ballefair">
+                                        9 meses
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EUROPA -->
+                        <div>
+                            <h2 class="h2">
+                                Europa
+                            </h2>
+        
+                            <p>
+                                A menor das quatro luas galileanas que orbitam Júpiter, Europa é o sonho de um amante de inverno. Com uma superfície gelada, é perfeito para um pouco de patinação no gelo, curling, hóquei ou simples relaxamento em sua confortável cabine de inverno.
+                            </p>
+        
+                            <div class="destination-info">
+                                <div>
+                                    <span>
+                                        Distância média
+                                    </span>
+        
+                                    <span class="h5-ballefair">
+                                        628 MIL. km
+                                    </span>
+                                </div>
+        
+                                <div>
+                                    <span>
+                                        Tempo de viagem estimado
+                                    </span>
+        
+                                    <span class="h5-ballefair">
+                                        3 anos
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TITÃ -->
+                        <div>
+                            <h2 class="h2">
+                                Titã
+                            </h2>
+        
+                            <p>
+                                A única lua conhecida por ter uma atmosfera densa além da Terra, Titã é um lar longe de casa (apenas algumas centenas de graus mais frio!). Como bônus, você obtém vistas impressionantes dos Anéis de Saturno.
+                            </p>
+        
+                            <div class="destination-info">
+                                <div>
+                                    <span>
+                                        Distância média
+                                    </span>
+        
+                                    <span class="h5-ballefair">
+                                        1.6 BIL. km
+                                    </span>
+                                </div>
+        
+                                <div>
+                                    <span>
+                                        Tempo de viagem estimado
+                                    </span>
+        
+                                    <span class="h5-ballefair">
+                                        7 anos
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <script src="js/script.js"></script>
+
+</body>
+</html>
