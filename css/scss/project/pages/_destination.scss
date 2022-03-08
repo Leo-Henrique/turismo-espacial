@@ -15,7 +15,6 @@
     align-items: flex-end;
     justify-content: space-between;
     gap: 6rem;
-
 }
 .destination-img {
     padding-left: 70px;
@@ -95,6 +94,9 @@
             
             letter-spacing: 2.4px;
         }
+        span:last-child {
+            font-size: $h5;
+        }
     }
 }
 
@@ -110,14 +112,15 @@
     .destination-container {
         flex-direction: column;
         align-items: center;
+        padding-top: 8rem;
     }
     .destination-img img{
         height: 350px;
     }
     .destination-content {
         text-align: center;
+        
         @include col-12;
-
         .destination-nav > ul,
         .destination-info {
             justify-content: center;
@@ -127,9 +130,10 @@
 @include breakpoint-sm {
     .destination-container {
         gap: 3rem;
+        padding-top: 0;
     }
     .destination-img img{
-        height: 200px;
+        height: 170px;
     }
     .destination-content {
         .destination-nav {

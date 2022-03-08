@@ -1,0 +1,155 @@
+.crew-page {
+    background-image: url("../images/crew/background-crew-desktop.jpg");
+    
+    @include breakpoint-lg {
+        background-image: url("../images/crew/background-crew-tablet.jpg");
+    }
+    @include breakpoint-sm {
+        background-image: url("../images/crew/background-crew-mobile.jpg");
+    }
+}
+main.crew {
+    flex: 1;
+    display: flex;
+    padding-top: 4rem;
+    padding-bottom: 0;
+}
+.crew-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.crew-content {
+    @include col-7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6rem;
+    .h4 {
+        display: block;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 1.5rem;
+    }
+    .h3 {
+        color: $support;
+        margin-bottom: 3rem;
+    }
+    p {
+        max-width: 470px;
+        color: $secondary;
+    }
+    .crew-nav {
+        margin-bottom: 8rem;
+    }
+    .crew-nav ul {
+        display: flex; 
+        column-gap: 2.4rem;
+        li button {
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            @include btn-transition(background-color);
+            @include desktop-supported {
+               &:hover {
+                    background-color: rgba(255, 255, 255, 0.5);
+               }
+            }
+        }
+        li.active button {
+            background-color: $support;
+        }
+    }
+}
+.crew-img {
+    align-self: flex-end;
+}
+
+@include breakpoint-xl {
+    .crew-content {
+        @include col-8;
+    }
+}
+@include breakpoint-lg {
+    .crew-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+    .crew-content {
+        @include col-12;
+        text-align: center;
+        display: block;
+        #tabsContentTexts {
+            padding-top: 8rem;
+        }
+        .h4 {
+            margin-bottom: 0.8rem;
+        }
+        .h3 {
+            margin-bottom: 1.6rem;
+        }
+        p {
+            max-width: 600px;
+            @include m-h-auto;
+            margin-bottom: 4rem;
+        }
+        .crew-nav {
+            margin-bottom: 0;
+        }
+        .crew-nav ul {
+            display: flex; 
+            justify-content: center;
+        }
+    }
+    .crew-img {
+        align-self: center;
+        img {
+            height: 530px;
+        }
+    }
+}
+@include breakpoint-sm {
+    main.crew {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+    .crew-container {
+        flex: initial;
+        align-items: initial;
+        justify-content: initial;
+        gap: 3rem;
+        position: relative;
+    }
+    .crew-content {
+        order: 1;
+        gap: 3rem;
+        display: flex;
+        .title-internal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        #tabsContentTexts {
+            padding-top: 0;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        .crew-nav {
+            order: -1;
+        }
+    }
+    .crew-img {
+        padding-top: 5rem;
+        align-self: initial;
+        border-bottom: 1px solid #383B4B;
+        img {
+            height: 300px;
+            @include m-h-auto;
+        }
+    }
+}

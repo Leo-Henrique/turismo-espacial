@@ -30,6 +30,12 @@
     line-height: 1.22;
     letter-spacing: 2px;
 }
+@include breakpoint-sm {
+    .h5, .h5-ballefair {
+        @include font-size(1.8rem);
+    }
+}
+
 .h6 {
     @include font-size($h5);
 }

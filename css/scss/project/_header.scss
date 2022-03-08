@@ -210,11 +210,13 @@
             @include font-size(1.6rem);
             flex: 1;
         }
-        &.active {
-            &::after {
-                width: 4px;
-                height: auto;
-            }
+        &::after {
+            display: none;
+        }
+        &.active::after {
+            display: block;
+            width: 4px;
+            height: auto;
         }
     }
 }
