@@ -953,6 +953,7 @@ main:not(.intro) {
 }
 
 .intro-texts .h5 {
+  display: block;
   color: #D0D6F9;
 }
 
@@ -1542,4 +1543,32 @@ main.crew {
   .technology-img {
     padding-top: 0;
   }
+}
+
+[data-inputAnimation] {
+  opacity: 0;
+}
+
+[data-inputAnimation="fadeInDown"] {
+  transform: translate3D(0, -20px, 0);
+}
+
+[data-inputAnimation="fadeInLeft"] {
+  transform: translate3D(15px, 0, 0);
+}
+
+[data-inputAnimation="fadeInTop"] {
+  transform: translate3D(0, 20px, 0);
+}
+
+[data-inputAnimation="fadeInRight"] {
+  transform: translate3D(-15px, 0, 0);
+}
+
+[data-inputAnimation].animate {
+  opacity: 1;
+  transform: none;
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
 }

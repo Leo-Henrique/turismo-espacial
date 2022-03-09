@@ -1,8 +1,15 @@
 document.documentElement.classList.add("js");
 
-import menuMobile from "./menu-mobile";
-import tabsNavigation from "./tabs-navigation";
+// bibliotecas
+import simpleAnime from "./libraries/simple-anime";
+
+// componentes
+import menuMobile from "./components/menu-mobile";
+import {btns, tabsNavigation} from "./components/tabs-navigation";
 
 
 menuMobile();
-tabsNavigation();
+if (btns.length) {
+    tabsNavigation();
+}
+new simpleAnime;
