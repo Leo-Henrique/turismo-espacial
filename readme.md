@@ -10,7 +10,7 @@ Finalizado.
 
 ![Captura de tela do projeto](https://user-images.githubusercontent.com/72027449/157722488-48292dae-41d9-4a2e-9e6d-ef0b10b322af.png)
 
-## Acesse o projeto
+## 🚀 Acesse o projeto
 
 * [Link do projeto](https://leo-henrique.github.io/turismo-espacial/)
 * [Desafio no Frontend mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
