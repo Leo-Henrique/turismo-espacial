@@ -12,9 +12,9 @@ Finalizado.
 
 ## Acesse o projeto
 
-[Link do projeto](https://leo-henrique.github.io/turismo-espacial/)
-[Desafio no Frontend mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
-[Design no Figma](https://www.figma.com/file/zUlxVd7DtjRbcVbId05S4U/space-tourism-website?node-id=0%3A1)
+* [Link do projeto](https://leo-henrique.github.io/turismo-espacial/)
+* [Desafio no Frontend mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
+* [Design no Figma](https://www.figma.com/file/zUlxVd7DtjRbcVbId05S4U/space-tourism-website?node-id=0%3A1)
 
 ## 💻 Tecnologias utilizadas
 
