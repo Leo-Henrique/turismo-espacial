@@ -19,10 +19,10 @@ export default function menuMobile() {
 
         menu.classList.add("display");
         setTimeout(() => {
-            menu.classList.add("show");
+            menu.firstElementChild.classList.add("show");
         }, 20);
         setTimeout(() => {
-            document.addEventListener("click", clickOutside);
+            menu.addEventListener("click", clickOutside);
         }, 300)
     }
     function closeMenu() {
@@ -36,15 +36,15 @@ export default function menuMobile() {
 
         document.body.classList.remove("menu-mobile-scrollbar");
 
-        menu.classList.remove("show");
-        document.removeEventListener("click", clickOutside);
+        menu.firstElementChild.classList.remove("show");
+        menu.removeEventListener("click", clickOutside);
         setTimeout(() => {
             menu.classList.remove("display");
         }, 300);
     }
 
     function clickOutside(event) {
-        if (event.target !== btn && event.target !== menu) {
+        if (event.target === menu) {
             closeMenu();
         }
     }
