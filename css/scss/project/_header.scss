@@ -163,7 +163,7 @@
     // JS
     .header-btn-mobile.close {
         padding: 3rem 2rem;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         z-index: $zIndex-btn-close;
